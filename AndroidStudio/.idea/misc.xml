@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ProyectosAndroid/AndroidStudio/app/src/main/res/drawable/fondo_categoria.xml" value="0.1415" />
+        <entry key="..\:/ProyectosAndroid/AndroidStudio/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1415" />
+        <entry key="..\:/ProyectosAndroid/AndroidStudio/app/src/main/res/font/font_awesome_6_brands_regular_400.xml" value="0.2164090368608799" />
+        <entry key="..\:/ProyectosAndroid/AndroidStudio/app/src/main/res/font/font_awesome_6_free_regular_400.xml" value="0.284375" />
+        <entry key="..\:/ProyectosAndroid/AndroidStudio/app/src/main/res/font/font_awesome_6_free_solid_900.xml" value="0.284375" />
+        <entry key="..\:/ProyectosAndroid/AndroidStudio/app/src/main/res/layout/activity_barra_superior.xml" value="0.24547101449275363" />
+        <entry key="..\:/ProyectosAndroid/AndroidStudio/app/src/main/res/layout/activity_detalle_producto.xml" value="0.24547101449275363" />
+        <entry key="..\:/ProyectosAndroid/AndroidStudio/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/ProyectosAndroid/AndroidStudio/app/src/main/res/layout/activity_photo.xml" value="0.24547101449275363" />
+        <entry key="..\:/ProyectosAndroid/AndroidStudio/app/src/main/res/layout/activity_settings.xml" value="0.24547101449275363" />
+        <entry key="..\:/ProyectosAndroid/AndroidStudio/app/src/main/res/layout/fondo_superior.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Santiago Parra/Documents/AndroidStudio/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Santiago Parra/Documents/AndroidStudio/app/src/main/res/layout/activity_settings.xml" value="0.24547101449275363" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

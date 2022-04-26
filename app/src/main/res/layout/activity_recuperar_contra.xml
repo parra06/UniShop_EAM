@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_recuperarContra"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+
+    <TextView
+        android:id="@+id/text_uniShopLogin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fuente2"
+        android:padding="25dp"
+        android:text="@string/unishop"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="65sp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:id="@+id/msj1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tienes_problemas_para_iniciar_sesi_n"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/msj2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu correo electrònico y te enviaremos un enlace para que recuperes el acceso a tu cuenta"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="30dp"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_correo_layout"
+        style="@style/ti_layout">
+
+        <EditText
+            android:id="@+id/text_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/fondo_forms"
+            android:hint="@string/correo_electronico1"
+            android:gravity="center"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_enviar_enlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/red"
+        android:padding="16dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/enviar_enlace"
+        app:cornerRadius="10dp" />
+
+    <TextView
+        android:id="@+id/msj3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crear_una_cuenta_nueva"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="30dp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_iniciar_sesion"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:padding="16dp"
+        android:backgroundTint="#DFDBDB"
+        android:textColor="@color/black"
+        android:text="@string/iniciar_sesi_n"
+        app:cornerRadius="10dp" />
+</LinearLayout>

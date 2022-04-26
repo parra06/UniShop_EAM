@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".actividades.MainActivity">
+
+    <include
+        android:id="@+id/barra_s"
+        layout="@layout/activity_barra_superior" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categorias"
+            android:textSize="30sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3">
+
+            <LinearLayout
+                style="@style/layout_categoria">
+
+                <Button
+                    android:id="@+id/btn_tec"
+                    style="@style/btn_categoria"
+                    android:text="\uf390"/>
+
+                <TextView
+                    style="@style/txt_categoria"
+                    android:text="@string/tecnologia"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_categoria">
+
+                <Button
+                    android:id="@+id/btn_hogar"
+                    style="@style/btn_categoria"
+                    android:text="\uf236"/>
+
+                <TextView
+                    style="@style/txt_categoria"
+                    android:text="@string/hogar"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_categoria">
+
+                <Button
+                    android:id="@+id/btn_ropa"
+                    style="@style/btn_categoria"
+                    android:text="\uf553"/>
+
+                <TextView
+                    style="@style/txt_categoria"
+                    android:text="@string/ropa"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_categoria">
+
+                <Button
+                    android:id="@+id/btn_aseo"
+                    style="@style/btn_categoria"
+                    android:text="\uf6e3"/>
+
+                <TextView
+                    style="@style/txt_categoria"
+                    android:text="@string/herramientas"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_categoria">
+
+                <Button
+                    android:id="@+id/btn_elec"
+                    style="@style/btn_categoria"
+                    android:text="\uf1e6"/>
+
+                <TextView
+                    style="@style/txt_categoria"
+                    android:text="@string/electro"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_categoria">
+
+                <Button
+                    android:id="@+id/btn_otros"
+                    style="@style/btn_categoria"
+                    android:text="\uf1b9"/>
+
+                <TextView
+                    style="@style/txt_categoria"
+                    android:text="@string/otros"/>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="@string/ofertas"/>
+
+            <Button
+                android:id="@+id/btn_registro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registro"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

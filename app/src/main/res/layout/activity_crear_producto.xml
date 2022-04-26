@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_registrar">
+<LinearLayout
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+   >
+
+    <TextView
+        android:id="@+id/text_uniShopLogin3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/fuente2"
+        android:padding="25dp"
+        android:text="@string/unishop"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="65sp"
+
+
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_nombre_layout"
+        style="@style/ti_layout">
+
+    <EditText
+        android:id="@+id/txt_nombre_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/fondo_forms"
+        android:gravity="center"
+        android:hint="@string/nombre_producto"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_precio_layout"
+        style="@style/ti_layout">
+
+        <EditText
+            android:id="@+id/txt_precio_producto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:background="@drawable/fondo_forms"
+            android:gravity="center"
+            android:hint="@string/precio_producto"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descuento    "/>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/btn_info_descuento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="@string/apagado"
+
+            android:textOn="@string/encendido"/>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+
+        android:id="@+id/text_descuento_layout"
+        style="@style/ti_layout">
+
+        <EditText
+            android:id="@+id/txt_descuento_producto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fondo_forms"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:enabled="false"
+            android:hint="@string/descuento_producto"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/seleccion_descuento"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+    </Spinner>
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip"
+
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Tecnologia"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip1"
+
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Ropa"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+</LinearLayout>
+</ScrollView>
