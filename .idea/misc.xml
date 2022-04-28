@@ -10,6 +10,7 @@
         <entry key="..\:/ProyectosAndroid/app/src/main/res/drawable/ic_launcher_background.xml" value="0.166" />
         <entry key="..\:/ProyectosAndroid/app/src/main/res/drawable/ic_search.xml" value="0.1545" />
         <entry key="..\:/ProyectosAndroid/app/src/main/res/layout-v28/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/ProyectosAndroid/app/src/main/res/layout/activity_carrito.xml" value="0.19610507246376813" />
         <entry key="..\:/ProyectosAndroid/app/src/main/res/layout/activity_compra.xml" value="0.264" />
         <entry key="..\:/ProyectosAndroid/app/src/main/res/layout/activity_crear_producto.xml" value="0.264" />
         <entry key="..\:/ProyectosAndroid/app/src/main/res/layout/activity_detalle_producto.xml" value="0.21784420289855072" />
@@ -23,7 +24,9 @@
         <entry key="..\:/ProyectosAndroid/app/src/main/res/layout/fragment_barra_superior.xml" value="0.264" />
         <entry key="..\:/ProyectosAndroid/app/src/main/res/layout/fragment_detalle_producto.xml" value="0.21784420289855072" />
         <entry key="..\:/ProyectosAndroid/app/src/main/res/layout/fragment_linea.xml" value="0.19610507246376813" />
+        <entry key="..\:/ProyectosAndroid/app/src/main/res/layout/item_comentario.xml" value="0.19610507246376813" />
         <entry key="..\:/ProyectosAndroid/app/src/main/res/layout/item_producto.xml" value="0.264" />
+        <entry key="..\:/ProyectosAndroid/app/src/main/res/menu/menu_principal.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

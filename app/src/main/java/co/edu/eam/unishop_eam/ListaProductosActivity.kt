@@ -18,6 +18,7 @@ import co.edu.eam.unishop_eam.data.Categorias
 import co.edu.eam.unishop_eam.data.Productos
 import co.edu.eam.unishop_eam.databinding.ActivityListaProductosBinding
 import co.edu.eam.unishop_eam.modelo.Producto
+import co.edu.eam.unishop_eam.util.utilidades
 import com.google.android.material.snackbar.Snackbar
 import it.xabaras.android.recyclerview.swipedecorator.RecyclerViewSwipeDecorator
 
@@ -30,30 +31,48 @@ class ListaProductosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityListaProductosBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        getSupportActionBar()?.hide()
-        getWindow().setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
+
         val codigoCategoria = intent.extras?.getInt("categoria")
-        for (cat in Categorias.getLista()){
-            if (cat.codigo == codigoCategoria){
-                binding.txtCategoria.text = cat.nombre
-                break
-            }
-        }
-
-
+        val productoBuscado = intent.extras?.getString("criterio")
 
         val listaProductos:ArrayList<Producto> = Productos.getLista()
-        val listaAux:ArrayList<Producto> = ArrayList()
-        for (producto in listaProductos){
-            for (cat in producto.categorias){
-                if (cat == codigoCategoria){
+        var listaAux:ArrayList<Producto> = ArrayList()
+        if (productoBuscado != null) {
+            listaAux = Productos.buscar(productoBuscado)
+
+
+
+
+            /*for (producto in listaProductos){
+                if (producto.nombre == productoBuscado.toString()){
+                    binding.txtCategoria.text = productoBuscado.toString()
                     listaAux.add(producto)
+                }
+            }*/
+        }else{
+            for (cat in Categorias.getLista()){
+                if (cat.codigo == codigoCategoria){
+                    binding.txtCategoria.text = cat.nombre
                     break
                 }
             }
+
+
+
+
+            for (producto in listaProductos){
+                for (cat in producto.categorias){
+                    if (cat == codigoCategoria){
+                        listaAux.add(producto)
+                        break
+                    }
+                }
+            }
         }
+
+
 
 
 
@@ -70,6 +89,8 @@ class ListaProductosActivity : AppCompatActivity() {
             ): Boolean {
                return false
             }
+
+
 
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                 val pos = viewHolder.adapterPosition
@@ -93,6 +114,13 @@ class ListaProductosActivity : AppCompatActivity() {
                         Log.e("Listaaaaaa","Swipe Derecha")
                     }
                 }
+            }
+
+            override fun onSelectedChanged(viewHolder: RecyclerView.ViewHolder?, actionState: Int) {
+                super.onSelectedChanged(viewHolder, actionState)
+                val pos = viewHolder?.adapterPosition
+                val producto = listaAux[pos!!]
+                utilidades.setProducto(producto)
             }
 
             override fun onChildDraw(

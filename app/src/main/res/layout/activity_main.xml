@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,7 +15,7 @@
 
 
     <TextView
-        android:id="@+id/text_uniShopLogin4"
+        android:id="@+id/text_uniShopHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/fuente2"
@@ -28,15 +28,23 @@
 
         />
 
-    <include
+    <!--<include
         android:id="@+id/barra_s"
-        layout="@layout/fragment_barra_superior"/>
+        layout="@layout/fragment_barra_superior"/>-->
+    <fragment
+        android:id="@+id/barra_superior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_uniShopHome"
+        class="co.edu.eam.unishop_eam.fragmentos.BarraSuperiorFragment" />
 
 
     <GridLayout
+        android:id="@+id/grid_categorias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="3"
+        android:layout_below="@+id/barra_superior"
         android:layout_marginTop="10dp">
 
 
@@ -190,36 +198,33 @@
 
 
     <TextView
+        android:id="@+id/txt_ofertas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
         android:textSize="20sp"
         android:textColor="@color/black"
+        android:layout_below="@+id/grid_categorias"
         android:layout_marginLeft="18dp"
         android:text="Ofertas"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lista_productos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_ofertas"/>
 
 
 
-    <Button
-        android:id="@+id/btn_prueba"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/barra_inferior"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-
-        android:backgroundTint="@color/red"
-        android:text="Prueba"
-        app:cornerRadius="15dp">
-
-    </Button>
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_principal"/>
 
 
 
 
 
-</LinearLayout>
+</RelativeLayout>

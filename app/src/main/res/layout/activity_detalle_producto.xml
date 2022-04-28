@@ -1,51 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".DetalleProductoActivity">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
-    android:weightSum="3"
-    tools:context=".DetalleProductoActivity">
+    android:weightSum="3">
 
-    <LinearLayout
-        android:id="@+id/parte_superior"
+    <TextView
+        android:id="@+id/text_uniShopLogin4"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal" >
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fuente2"
+        android:layout_marginTop="20sp"
+        android:text="@string/unishop"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="65sp"
+        android:textStyle="bold"
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/default_product"
-            android:contentDescription="@string/img_producto"/>
+        />
 
-        <LinearLayout
+    <fragment
+        android:id="@+id/barra_superior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="co.edu.eam.unishop_eam.fragmentos.BarraSuperiorFragment"/>
+
+    <TextView
+        android:id="@+id/nombre_producto_detalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Producto"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/img_producto_detalle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/default_product"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/img_producto"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:id="@+id/precio_producto_detalle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:orientation="vertical"/>
+            android:text="Precio"
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:text="@string/nombre_producto"/>
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="@string/precio_producto"/>
+        <TextView
+            android:id="@+id/descuento_producto_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descuento"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/anadir_carrito"/>
-
-        </LinearLayout>
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btn_agregar_a_carrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/gris_claro"
+        android:textColor="@color/black"
+        android:text="Agregar al carrito"
+        android:layout_marginTop="15dp"
+        />
 
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripcion"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txt_descripcion_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:singleLine="false"
+            android:text=""
+            android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comentarios"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista_comentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</LinearLayout>
+
+</ScrollView>

@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UniShop_EAM">
         <activity
+            android:name=".ProductosFavoritosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CarritoActivity"
+            android:exported="false" />
+        <activity
             android:name=".CrearProductoActivity"
             android:exported="false" />
-
-
-
         <activity
             android:name=".ResultadoBusquedaActivity"
             android:exported="false" />
@@ -35,20 +38,18 @@
             android:exported="false" />
         <activity
             android:name=".activity_login"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".activity_registrar"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

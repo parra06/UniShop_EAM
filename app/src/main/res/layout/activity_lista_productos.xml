@@ -20,7 +20,11 @@
         android:textStyle="bold"
 
         />
-    <include layout="@layout/fragment_barra_superior"/>
+    <fragment
+    android:id="@+id/barra_superior"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    class="co.edu.eam.unishop_eam.fragmentos.BarraSuperiorFragment" />
 
     <TextView
         android:id="@+id/txt_categoria"

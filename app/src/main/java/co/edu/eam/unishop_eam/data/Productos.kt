@@ -91,6 +91,13 @@ object Productos {
     }
 
     fun listarOfertas():ArrayList<Producto>{
-        return ArrayList()
+        val listaAux:ArrayList<Producto> = ArrayList()
+        for (producto in listaProductos){
+
+            if (producto.descuento!=0f){
+                listaAux.add(producto)
+            }
+        }
+        return listaAux
     }
 }
