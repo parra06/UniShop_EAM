@@ -22,10 +22,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
 
 
-        getSupportActionBar()?.hide()
-        getWindow().setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
 
 
 

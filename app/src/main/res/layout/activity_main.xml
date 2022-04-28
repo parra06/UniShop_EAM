@@ -10,16 +10,12 @@
    >
 
 
-
-
-
-
     <TextView
         android:id="@+id/text_uniShopHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/fuente2"
         android:layout_marginTop="20sp"
+        android:fontFamily="@font/fuente2"
         android:text="@string/unishop"
         android:textAlignment="center"
         android:textColor="@color/black"

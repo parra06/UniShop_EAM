@@ -9,10 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
-import co.edu.eam.unishop_eam.R
-import co.edu.eam.unishop_eam.CarritoActivity
-import co.edu.eam.unishop_eam.ListaProductosActivity
-import co.edu.eam.unishop_eam.ResultadoBusquedaActivity
+import co.edu.eam.unishop_eam.*
 import co.edu.eam.unishop_eam.databinding.FragmentBarraSuperiorBinding
 
 
@@ -41,7 +38,8 @@ class BarraSuperiorFragment : Fragment() {
         }
 
         binding.btnCarrito.setOnClickListener {
-            startActivity( Intent(context, CarritoActivity::class.java) )
+            val intent = Intent(context, CarritoActivity2::class.java)
+            startActivity(intent)
         }
 
         return binding.root

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UniShop_EAM">
         <activity
+            android:name=".CarritoActivity2"
+            android:exported="false" />
+        <activity
             android:name=".ProductosFavoritosActivity"
             android:exported="false" />
         <activity

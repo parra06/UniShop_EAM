@@ -1,5 +1,6 @@
 package co.edu.eam.unishop_eam
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -47,6 +48,10 @@ class DetalleProductoActivity : AppCompatActivity() {
             binding.listaComentarios.layoutManager = LinearLayoutManager(this,
                 LinearLayoutManager.VERTICAL,false)
 
+            binding.btnAgregarACarrito.setOnClickListener{
+                val intent = Intent(this, CarritoActivity2::class.java)
+                startActivity(intent)
+            }
 
 
         }
